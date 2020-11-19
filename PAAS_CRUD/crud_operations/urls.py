@@ -1,6 +1,8 @@
 from django.urls import path
 from . import views
 
+app_name = 'crud_operations'
+
 urlpatterns = [
     path('Create', views.Create, name='Create'),
     path('Update', views.Update, name='Update'),
