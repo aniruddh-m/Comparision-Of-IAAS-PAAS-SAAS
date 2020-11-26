@@ -1,0 +1,5 @@
+- retrieve.php should have a table (or a new page opening, but preferrably a table) that shows the student data that is being fetched
+
+- update.php should open a new page(or a div underneath, but preferrably a page) that allows the user to modify the student data
+
+- response validation
