@@ -72,4 +72,4 @@ def Delete(request):
         return render(request, 'crud_operations/crud_delete.html') 
     
 def index(request):
-    return HttpResponse("Crud home page")
+    return render(request, 'crud_operations/crud_home.html')
