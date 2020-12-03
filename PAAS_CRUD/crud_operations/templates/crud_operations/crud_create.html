@@ -32,11 +32,13 @@
           <div class="input-field third-wrap">
             <button class="btn-search" type="submit">Enter</button>
           </div>
-          {% if messages %}
-            {% for message in messages %}
-              <div class="container" style="display: block;">{{ message }}</div>
-            {% endfor %}
-          {% endif %}
+          <div>
+            {% if messages %}
+              {% for message in messages %}
+                <div class="container" style="display: block;">{{ message }}</div>
+              {% endfor %}
+            {% endif %}
+          </div>
         </div>
       </form>
     </div>
