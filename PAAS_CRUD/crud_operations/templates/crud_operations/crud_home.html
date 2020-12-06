@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'crud_operations/crud_home.css' %}" rel="stylesheet" />
+    <title>CRUD Home Page</title>
+</head>
+<body>
+  <div>
+      <div class="topbar" style="height: 80px; background-color: dimgrey;">   
+        <h1 style="text-align: center; padding-top: 20px; color: white">
+          CRUD Homepage
+        </h1>
+      </div>
+  
+      <div class="btn-group">
+          <a href="{% url 'crud_operations:Create' %}"><button class="InputButton">Create a new Record</button></a>
+          <a href="{% url 'crud_operations:Delete' %}"><button class="InputButton">Delete a Record</button></a>
+      </div>
+      <div class="btn-group">
+          <a href="{% url 'crud_operations:Update' %}"><button class="InputButton">Update an existing Record</button></a>
+          <a href="{% url 'crud_operations:Retrieve' %}"><button class="InputButton">Retrieve an existing Record</button></a>
+      </div>
+  </div>
+</body>
+</html>

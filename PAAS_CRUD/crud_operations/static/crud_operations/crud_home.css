@@ -1,0 +1,16 @@
+.topbar{
+  margin: 0px;
+}
+.btn-group{
+  width:100%; 
+  padding-top:100px; 
+  padding-left:0px; 
+} 
+
+.InputButton{
+  width:45%; 
+  padding:50px; 
+  margin-left: 20px;
+  background-color:dimgrey; 
+  color:white;
+}
