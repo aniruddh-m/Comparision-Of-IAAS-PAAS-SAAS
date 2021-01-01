@@ -1,11 +1,7 @@
 from locust import TaskSet, task, HttpUser
 
 class UserBehaviour(TaskSet):
-    # @task
-    # def launch_url(self):
-    #     # GET request
-    #     self.client.get("/crud/Retrieve")
-    #     print("Got a webpage response")
+
     @task
     def post_Create(self):
         # POST request on the CREATE page
@@ -31,8 +27,8 @@ class UserBehaviour(TaskSet):
         print("Posted a request")
 
     @task
-    def post_retrieve(self):
-        # POST request on the RETRIEVE page
+    def post_delete(self):
+        # POST request on the DELETE page
         response = self.client.get("/Delete")
         csrftoken = response.cookies['csrftoken']
         self.client.post("/Delete", {"USN": "1RV17EC011"}, headers={"X-CSRFToken": csrftoken})
